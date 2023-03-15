@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|start"
+    android:gravity="center"
+    android:id="@+id/Linear_item_detail_header"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_detail_header_video"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:background="@drawable/background_gradient_transparent"
+        android:backgroundTint="@color/colorDark"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_detail_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_detail_header_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="7"
+            android:ellipsize="end"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_detail_header_watch_now"
+                android:layout_width="110dp"
+                android:textColor="@color/colorWhite"
+                android:text="WATCH\nNOW"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:focusable="true"
+                android:focusedByDefault="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/control_event_tab"
+                android:layout_height="45dp"/>
+
+            <Button
+                android:id="@+id/btn_detail_header_watch_list"
+                android:layout_width="130dp"
+                android:textColor="@color/colorWhite"
+                android:focusable="true"
+                android:focusedByDefault="true"
+                android:focusableInTouchMode="true"
+                android:text="Add To\nWATCHLIST"
+                android:gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/control_event_tab"
+                android:layout_height="45dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

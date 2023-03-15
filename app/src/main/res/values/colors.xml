@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#053555</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#232a2f</color>
+    <!--<color name="colorBlackTransparent">#BFFFFFFF</color>-->
+    <color name="colorBlackTransparent">#BF000000</color>
+    <color name="colorWhiteTransparent">#33FFFFFF</color>
+    <color name="colorWhiteTransparentItem">#80FFFFFF</color>
+    <color name="colorWhiteTransparentItemProgress">#B3FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#1BB500</color>
+    <color name="colorDark">#03175E</color>
+    <color name="colorFocusControl">#C1A702</color>
+    <color name="colorFocusControlClicked">#FFDC00</color>
+    <color name="transparentBackground">#23FFFFFF</color>
+</resources>

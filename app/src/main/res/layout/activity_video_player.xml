@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fr.bmartel.youtubetv.YoutubeTvView
+        android:id="@+id/youtube_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:yt_autoHide="auto"
+        app:yt_debug="false"
+        app:yt_showControls="auto"
+        app:yt_showNowPlayingCard="true"
+        app:yt_showRelatedVideos="false"
+        app:yt_videoId="Cv0XSGvOqms"
+        app:yt_showVideoInfo="false"
+        app:yt_videoAnnotation="false"
+        app:yt_videoQuality="hd1080" />
+
+
+    <FrameLayout
+        android:id="@+id/animationView_forward"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_layout_bg"
+            android:padding="150dp"
+            android:src="@drawable/fast_forward" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/forward" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/animationView_backward"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center|start"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_layout_bg"
+            android:padding="150dp"
+            android:src="@drawable/fast_forward" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/backward" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_play_pause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_layout_bg"
+        android:padding="15dp"
+        android:src="@drawable/lb_ic_pause"
+        app:tint="@color/colorWhite" />
+
+    <RelativeLayout
+        android:id="@+id/rlVideoPlayerNativePlayerControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        android:paddingEnd="20dp"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/linear_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_video_player"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvVideoPlayerSetForwardMultiplier"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_title"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvVideoPlayerStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <SeekBar
+                        android:id="@+id/sbVideoPlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressBackgroundTint="@color/colorWhiteTransparentItem"
+                        android:progressTint="@color/colorWhite"
+                        android:thumbTint="@color/colorWhite" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tvVideoPlayerEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="00:00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llVideoPlayerControls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

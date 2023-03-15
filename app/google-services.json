@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095770713724",
+    "firebase_url": "https://clients-common.firebaseio.com",
+    "project_id": "clients-common",
+    "storage_bucket": "clients-common.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095770713724:android:3fcc9cf3e8b365d52d23f9",
+        "android_client_info": {
+          "package_name": "com.amazon.rialto.webapp.Ae2d8d4cbe963fb9521dba888b100f1e07d49c250"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095770713724-vjpl46ct9h6rt4t1q33831lq2sfrt8a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5lmyizToXFuN0ll5C-1_1O8_9OEMJauA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095770713724-vjpl46ct9h6rt4t1q33831lq2sfrt8a8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
