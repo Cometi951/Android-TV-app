@@ -1,4 +1,4 @@
-# Android TV app - Java, lean-back, XML, Rowsupprot Framgent, Presenter
+# Android TV app - Java, lean-back, XML, RowSupport Framgent, Presenter
 
 ## 1. Home page
 ![](https://github.com/Cometi951/Android-TV-app/blob/master/Screenshot_1678885981.png)
